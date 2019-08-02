@@ -50,7 +50,7 @@ For this thought experiment, let me explain why "errors" are not erroneous by na
 
 ###### "errors" are state that can be tracked and measured with an asymptote. The only concept rooted in erroneous nature is the data itself
 
-<img src="https://raw.github.com/specialorange/FDXCM/master/doc/controllers_brief.svg">
+![Image description]("https://raw.github.com/specialorange/FDXCM/master/doc/controllers_brief.svg")
 
 "Errors" in this thought experiment are not erroneous because they are just state with asymptotic qualities and therefore make them the key and pivotal role in the software and the only state that can autonomously manage a piece of software without human interaction.
 
