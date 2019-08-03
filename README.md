@@ -2,9 +2,11 @@ _...after reading please note that it's the result of momentary inspiration with
 
 # 0. Asymptotic State and Flag Notation (whatever you want to call it for now)
 
+##### tldr: "Errors" are not erroneous because actual errors are result of not facilitating asymptotic state to effectively reduce any gradational state in your application.
+
 > The best way I can get my thoughts down regarding approach is through recollection of a friendly walk-and-talk for some outdoor coffee. My friend, a very bright engineer, politely listened as I babbled.
 
-### `f(x) = 1/x`
+ `f(x) = 1/x`
 
 _Any_ piece of software, simple or complex, designed to compute state requires time to run the process.
 
@@ -118,8 +120,5 @@ x ~ (40+0+1/50) ~ z
 Now what you see above is a pretty straightforward way to represent some sort of meta-like substate "gauging" up or "gauging" down the scope.
 
 `a`, `x`, `z` all symbolize time in a linear fashion form `a` to `z` likewise for `x` and `o` but as intermediate states with x being within any incremental gauge that can only factor up and factor down by 10.
-
-
-Next, I will explore how to apply this thinking to a fully nested application including details on authentication strategy lifecycles maybe hopefully
 
 TODO: stuff
