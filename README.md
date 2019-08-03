@@ -2,7 +2,7 @@ _...after reading please note that it's the result of momentary inspiration with
 
 # 0. Asymptotic State and Flag Notation (whatever you want to call it for now)
 
-##### tldr: "Errors" are not erroneous because actual errors are result of not facilitating asymptotic state to effectively reduce any gradational state in your application.
+##### tldr: "Errors" are not erroneous i think
 
 > The best way I can get my thoughts down regarding approach is through recollection of a friendly walk-and-talk for some outdoor coffee. My friend, a very bright engineer, politely listened as I babbled.
 
@@ -15,8 +15,8 @@ Given any level of complexity, you will have an initial `input`, a resulting `st
 Assumptions & Requirements
 * The resulting state of any lifecycle, barring the last, is the initial state of the subsequent lifecycle.
 * A sequence of n, where n =/= 0 || n != 1, lifecycle units represent faultless operation of the software.
-* `input = n*5`
-* `state = input + (n*5)`
+* `input = n * 5`
+* `state = input + (n * 5)`
 
 ```
 a ~ (10+0+1) ~~~~ o
@@ -27,13 +27,13 @@ o ~ (1) ~~~~~~~~~ o
 a ~ (0+1) ~~~~~~~ z
 ```
 
-It's okay to think of any integer 5 (base ten for simplicity) as a symbol representing the simplest data structure available in this environment. In fact, consider the next graphic depicting any application's very first lifecycle except we've dramatically increased the complexity a bit on the initial state – a classic example being authentication.
+It's okay to think of any integer 5 (base ten for simplicity) as a symbol. It represents the most "least-complex" data structure possible in this environment. Please, consider the next graphic depicting any application's very first lifecycle except we've dramatically increased the complexity a bit on the initial state.
 
 ```
-a ~ (20+1) ~ z
+a ~ (20+0+1) ~ z
 ```
 
-At this point, I want to depict the next concept by destructuring the states into smaller structures for further visualization and more explanation after.
+At this point, try to depict the next concept by _destructuring_ the states into smaller states for further visualization and more explanation after.
 
 ```
 a ~ (20+5+0+1) ~~~~~ o
@@ -44,7 +44,7 @@ o ~ (2+2+2+0+1) ~~~~ z
 
 Notice how the last lifecycle listed contains only symbols `2, 0, 1`. Each supposed data structure has been contracted down by a mathematical factor of five which we'll consider the base unit in this little thought experiment. Remember this is just an illustration. :)
 
-> The anti-pattern here being a product of 5 distributed back through the lifecycle which serves no purpose other than to reinforce the symbolism and notation.
+> The anti-pattern here being a product of 5 distributed back through the lifecycle which serves no purpose other than to reinforce the symbolism and notation. Top down!
 
 #### `0` and `1`
 The last detail on the contraction is the `0` and `1`. These each will represent null state and error state respectively. The symbol, `1`, was chosen because it represents "half-baked" state or _nearly_ no state at all, but ultimately has value and meaning despite the name error.
