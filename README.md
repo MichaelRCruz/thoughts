@@ -1,8 +1,10 @@
-after reading please note that it's the result of momentary inspiration and may not work out later
+_...after reading please note that it's the result of momentary inspiration with zero research or background in mathematics and science.
 
-# 0. Factor-of-Five something using Flag Notation or whatever you want to call it for now
+# 0. Asymptotic State and Flag Notation (whatever you want to call it for now)
 
 > The best way I can get my thoughts down regarding approach is through recollection of a friendly walk-and-talk for some outdoor coffee. My friend, a very bright engineer, politely listened as I babbled.
+
+### `f(x) = 1/x`
 
 _Any_ piece of software, simple or complex, designed to compute state requires time to run the process.
 
@@ -42,15 +44,15 @@ Notice how the last lifecycle listed contains only symbols `2, 0, 1`. Each suppo
 
 > The anti-pattern here being a product of 5 distributed back through the lifecycle which serves no purpose other than to reinforce the symbolism and notation.
 
-###### `0` and `1`
+#### `0` and `1`
 The last detail on the contraction is the `0` and `1`. These each will represent null state and error state respectively. The symbol, `1`, was chosen because it represents "half-baked" state or _nearly_ no state at all, but ultimately has value and meaning despite the name error.
 
-###### "errors" do not exist and they are not real
+#### "Errors" do not exist and they are not real
 For this thought experiment, let me explain why "errors" are not erroneous by nature. This type of state is still declaritive whereby its mere existence is enough to declare something and for anything listening to act (I'll get into this idea of "respawning" but not sure yet if I want to use that word). In fact you could casually, yet theoretically, claim that this "error" is like a catalyst. It is able to, for example, initiate _only one_ lifecycle namely it's own to accomplish _only one_ goal: to contract or reduce state and therefore bring "error" closer to zero. This rounds out the definition of "error".
 
-###### "errors" are state that can be tracked and measured with an asymptote. The only concept rooted in erroneous nature is the data itself
+#### "Errors" are state that can be tracked and measured with an asymptote. The only concept erroneous in nature is the data itself
 
-![Image description]("https://raw.github.com/specialorange/FDXCM/master/doc/controllers_brief.svg")
+![asymptote]("https://en.wikipedia.org/wiki/File:Hyperbola_one_over_x.svg")
 
 "Errors" in this thought experiment are not erroneous because they are just state with asymptotic qualities and therefore make them the key and pivotal role in the software and the only state that can autonomously manage a piece of software without human interaction.
 
@@ -59,7 +61,7 @@ For this thought experiment, let me explain why "errors" are not erroneous by na
 
 The only, subjectively, desirable quality of "errors" here are to actually manage the _lifecycles_ of the application. This concept closes the loop from initial state to finality.
 
-###### _silicon_ rule
+###### _silicon_ rule :)
 If that is true then the next rule is that "errors" may not effect a change to any gradationally superior lifecycle, i.e., state only flows from the top down.
 
 Apply the previous technique to each base unit in any lifecycle and you will see that it is possible for any base unit to error or any null state to be null state. Either way, it takes _at least_ one of these to exist to transition through the containing lifecycle.
