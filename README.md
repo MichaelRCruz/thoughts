@@ -1,4 +1,6 @@
-# godel.js
+### godel.js
+
+> UPDATE: so the constant you see is technically flawed I think, but the idea still remains. I have to better represent all possible computable values and find time to fix. I found an idea based on another devs implementation that I will for sure reference.
 
 ```javascript
 function init(n = 0) {
