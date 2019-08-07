@@ -23,8 +23,8 @@ these are the only two possible return values of init()
 
 If init() can only equal 0 or 1, then the following must be true.
 
-if `init(n)` is equal to 0, then `(1 - init(n)) === 1) - 0 === 1)` should equal zero, but nuh uh.
+if `init(n)` is equal to 0
 
 0
 should be equal to
-(1 - init(n)) === 1) - 0 === 1) <---- awww, man!
+(1 - init(n)) === 1) - 0 === 1) <-- nuh, uh! call the cops!
