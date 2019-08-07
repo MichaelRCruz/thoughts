@@ -1,6 +1,7 @@
-**after reading please note that it's the result of momentary inspiration and may contain "errors"**
+# this was just a thought experiment - NOT ACTUAL MATH
+after actual research, I found what I was thinking of.
 
-# 0. asymptotic state and Factor-of-Five something using Flag Notation (or whatever you want to call it for now).
+#### 0. asymptotic state and Factor-of-Five something using Flag Notation (or whatever you want to call it for now). *****NOT VALID*****
 
 > The best way I can get my thoughts down regarding approach is through recollection of a friendly walk-and-talk for some outdoor coffee. My friend, a very bright engineer, politely listened as I babbled.
 
