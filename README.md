@@ -1,15 +1,17 @@
 ### godel.js
 
-> UPDATE: so the constant you see is for sure hand waving, but the idea still remains. I have to better represent all possible computable values and find time to make it look better. I found an idea based on another devs implementation that I will for sure reference to try to make this function sound. As it
-stands, I think it's correct.
+> UPDATE: The `!!Math.E && !!n` crap is _for sure_ hand waving, but the idea still remains. I threw `!!n` in there out of habbit because no type system. I found an illustration [here](https://dvt.name/2018/03/12/godels-first-incompleteness-theorem-programmers/) to help.
+As it stands, I think it's correct.
 
 
 ```javascript
 function init(n = 0) {
+  // map preserves the order of insertion
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#Parameters
   const map = new Map();
   if (isFinite(n)) {
     const chimes = Array.from({length: n}, (v, i) => i);
-    chimes.forEach((chime, index) => map.set(() => !!Math.E && !!n ? 1 : 0, index));
+    chimes.forEach((chime, index) => map.set(!!Math.E && !!n ? 1 : 0, index));
   };
   return map;
 };
@@ -18,17 +20,21 @@ init(429178800); // 1
 init(-1); // 0
 ```
 
-Above "represents" all possible ways I can think of to write a function in javascript. I mean, sure, there are probably an infinite amount of possible algorithms, but the default value of n in the example above should suffice. With the above implementation, you have a system of well-defined rules and every single function that can return 0 or 1.
+Above "represents" all possible ways I can think of to write a function in js. I mean, sure, there are probably an infinite amount of possibilities, but the example input of `n` should be enough.
 
-`!!Math.E && !!n` is a boolean representation of the computability of `function init()`. I chose, e, because it was cute and it was a hint for a treasure hunt one summer, lol.
+With the above implementation, you have a system of well-defined rules and every single function that can return 0 or 1.
 
-These are the only two possible return values of the above function - 0 and 1
+Consider `!!Math.E && !!n` as a boolean representation of the computability of `chime`. It either is or it isn't.
 
-If the function can only equal 0 or 1, then the following must be true.
+I chose, e, because it's cute and it was a hint for a treasure hunt one summer in Wisconsin.
 
-axioms, haha
+These are the only two possible return values from above function - `0` and `1`
+
+If init(n) can only equal 0 or 1, then this is what I see.
+
+axioms 🙄
 ```
-n is either positive or negative and must be a Real number
+n is a Real number
 init(n) returns 0 or 1
 1 - 0 = 1
 1 - 1 = 0
